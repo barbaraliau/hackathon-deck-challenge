@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="deck">
+	<head>
+		<title>LocalPair</title>
+	</head>
+	<body ng-controller="DeckCtrl as dc">
+
+	<div ng-repeat="card in dc.cards">
+		<img ng-src="{{card.image}}"/>
+	</div>
+
+
+
+	<!-- ========= REGULAR SCRIPTS ========= -->
+		<script src="libs/angular/angular.js"></script>
+		<script src="DeckCtrl.js"></script>
+
+
+	</body>
+</html>
